@@ -189,9 +189,9 @@ main {
   cursor: pointer;
   margin: 1.1rem;
 
-  box-shadow: 0 1px 1px rgba(18, 172, 56, 0.12),
-    0 2px 2px rgba(56, 194, 21, 0.12), 0 4px 4px rgba(32, 161, 28, 0.12),
-    0 8px 8px rgba(45, 161, 10, 0.12), 0 16px 16px rgba(40, 190, 21, 0.12);
+  box-shadow: 0 1px 1px rgba(10, 91, 30, 0.12),
+    0 2px 2px rgba(10, 91, 30, 0.12), 0 4px 4px rgba(10, 91, 30, 0.12),
+    0 8px 8px rgba(10, 91, 30, 0.12), 0 16px 16px rgba(10, 91, 30, 0.12);
 
   transition: all 0.3s ease-in-out 0.1s;
 }
@@ -239,7 +239,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #9ee63c;
+  background-color: #77aa30;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -253,7 +253,7 @@ header img {
 }
 
 header li {
-  background-color: #9ee63c;
+  background-color: #77aa30;
   font-size: 1.3rem;
   padding: 1rem;
   text-transform: uppercase;
@@ -264,8 +264,8 @@ header li {
 }
 
 header li:hover {
-  background-color: whitesmoke;
-  color: #9ee63c;
+  background-color: #459a45;
+  color: #77aa30;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
@@ -326,39 +326,11 @@ span.bold {
   transform: skew(-20deg);
   margin-left: -10px;
 
-  border-image: linear-gradient(to bottom right, #f4c515, #11d331);
+  border-image: linear-gradient(to bottom right, #338d17, #01d524);
   border-image-slice: 1;
   border-left-width: 10px;
   border-bottom-width: 10px;
   font-style: normal;
-}
-
-.whoare .subtitle {
-  border-image: linear-gradient(
-    to right,
-    #b3d9ff,
-    #87cefa,
-    #4d4dff,
-    #9400d3,
-    #b3d9ff
-  );
-  border-image-slice: 1;
-}
-
-.issues .subtitle {
-  border-image: linear-gradient(
-    53deg,
-    rgba(129, 70, 177, 1) 32%,
-    rgba(255, 0, 96, 1) 63%,
-    rgba(253, 2, 95, 1) 82%,
-    rgba(219, 37, 74, 1) 100%
-  );
-  border-image-slice: 1;
-}
-
-.trust .subtitle {
-  border-image: linear-gradient(to right, #f4dc15, #ab9e37, #5f5e54);
-  border-image-slice: 1;
 }
 
 .paragraph {
@@ -375,7 +347,7 @@ a {
 
 /*footer*/
 footer {
-  background-color: #32cd32;
+  background-color: #4f714f;
   color: white;
   display: flex;
   flex-direction: column;
@@ -484,8 +456,8 @@ footer .dev-card .right {
 
 .classic-button {
   color: whitesmoke;
-  background-color: #11d331;
-  border: 2px solid #11d331;
+  background-color: #4f714f;
+  border: 2px solid #4f714f;
   text-align: center;
   border-radius: 2rem;
   width: 10rem;
@@ -496,11 +468,11 @@ footer .dev-card .right {
 }
 
 .classic-button:hover {
-  color: #11d331;
+  color: #4f714f;
   background-color: white;
   font-weight: bold;
   scale: 1.05;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  box-shadow: rgba(12, 39, 10, 0.15) 0px 48px 100px 0px;
 
   transition: all 0.3s ease-in-out;
 }

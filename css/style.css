@@ -14,6 +14,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Lemon_milk_medium';
+  src: url('/fonts/lemon_milk/lemon_milk/LEMONMILK-Medium.otf') format('truetype');
+}
+
 body {
   margin: 0;
   width: 100vw;
@@ -128,8 +133,9 @@ main {
 }
 
 #intro h2 {
-  font-size: 5vw;
+  font-size: 3vw;
   font-weight: bold;
+  font-family: 'Lemon_milk_medium', sans-serif;
   color: rgb(43, 99, 184);
 }
 
