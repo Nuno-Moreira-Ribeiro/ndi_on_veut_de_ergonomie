@@ -294,14 +294,16 @@ header ul {
 
 #title-container h1 {
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 7vh;
+  text-align: center;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 7vh; 
 }
 
 #title-container h3 {
   font-size: 1.3rem;
   position: relative;
-  left: 8%;
+  text-align: center;
   margin-top: 1.3rem;
 }
 
