@@ -250,6 +250,7 @@ header {
 
 header img {
   height: 10vh;
+  cursor: pointer;
 }
 
 header li {
@@ -261,10 +262,11 @@ header li {
   color: whitesmoke;
   font-weight: bold;
   display: block;
+  border-radius: 10px;
 }
 
 header li:hover {
-  background-color: #459a45;
+  background-color: #ffffff;
   color: #77aa30;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
@@ -523,6 +525,9 @@ footer .dev-card .right {
 
 /* taille smartphone */
 @media screen and (max-width: 700px) {
+  #contact {
+    display: none;
+  }
   header {
     flex-direction: column;
   }

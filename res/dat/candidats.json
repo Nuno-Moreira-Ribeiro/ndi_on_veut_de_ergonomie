@@ -2,7 +2,7 @@
     "candidats": [
         {
             "name": "Clément",
-            "description": "Salut moi c'est Clément ! Dans la vie de tous les jours, j'aime programmer et dessiner. J'ai contribué à la création de ce site. N'hésite pas à me contacter si tu veux me faire part de ton retour par rapport à ce test de sociabilité. 😉",
+            "description": "Salut moi c'est Clément ! Dans la vie de tous les jours, j'aime programmer et dessiner. J'ai contribué à la création de ce site. N'hésite pas à me contacter si tu veux me faire part de ton retour par rapport à ce test. 😉",
             "persoInfos": {
                 "birth": "2004 (18ans)",
                 "profession": "Etudiant en informatique",
@@ -26,7 +26,7 @@
         },
         {
             "name": "Jonah",
-            "description": "lorem",
+            "description": "Je m'appelle Jonah, et je suis actuellement en première année de BUT Informatique. Passionné par les nouvelles technologies, je suis avide d'apprendre et de découvrir les domaines innovants de l'informatique. Ma curiosité sans limites me pousse à explorer de nouveaux horizons, faisant de moi un membre actif et enthousiaste de la communauté étudiante en pleine expansion.",
             "persoInfos": {
                 "birth": "2004 (19ans)",
                 "profession": "Etudiant en informatique",
