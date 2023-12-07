@@ -23,6 +23,18 @@
             "profilePic": "../res/img/Candidats/nuno.png",
             "messageToken": "1164887753742372904/4_ztvuaatWlRLwV7Ej46MTW_wo4KiL0gsrS_e1TygpG7tIFu85w5X8M_AEpfj87sgiVq",
             "sendedMessage": "Merci, je te répondrai dès que je pourrai !"
+        },
+        {
+            "name": "Jonah",
+            "description": "lorem",
+            "persoInfos": {
+                "birth": "2004 (19ans)",
+                "profession": "Etudiant en informatique",
+                "size": "1m20 avec un penis de 9cm"
+            },
+            "profilePic": "../res/img/Candidats/clement.png",
+            "messageToken": "Ton token Enculé",
+            "sendedMessage": "Merci, je te répondrai dès que je pourrai !"
         }
     ]
 }

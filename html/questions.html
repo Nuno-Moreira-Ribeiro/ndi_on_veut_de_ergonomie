@@ -27,10 +27,11 @@
 
     <link rel="shortcut icon" href="../res/img/icon.ico"> <!-- charger la miniature -->
 
-    <title>Socio-O-meter - Suis-je sociable ?</title>
+    <title>Ecologique-O-Meter - Suis-je Ecolo ?</title>
 </head>
 
 <body>
+    <div class="background-image"></div>
     <!-- Loader... -->
     <div class="loader">
         <span class="lettre">C</span>
@@ -47,6 +48,7 @@
     <script type="module" src="../js/chargement.js"></script>
     <!-- fin Loader -->
 
+    <div class="liane"><img src="../res/img/lianesV1.png" alt=""></div>
     <main>
 
         <img id="logo" src="../res/img/logo.png" alt="logo pnj o meter" draggable="false">
@@ -71,15 +73,22 @@
                 </div>
             </div>
         </div>
+
     </main>
+    <div class="liane"><img src="../res/img/lianesV1.png" alt=""></div>
 
     <footer>
-        <p>&copy; 2023 - <a href="informations.html">CA.NMR</a> all rights reserved</p>
+        <p>&copy; 2023 - <a href="informations.html">CA.NMR.JB</a> all rights reserved</p>
     </footer>
 
     <!-- charger le js -->
     <script type="module" src="../js/questions.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.body.classList.add("background-loaded");
+        });
 
+    </script>
 
 
 
