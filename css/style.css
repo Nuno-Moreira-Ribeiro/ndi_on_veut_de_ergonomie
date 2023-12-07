@@ -29,6 +29,8 @@ body {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  background-image: url("../res/img/bg.png");
+  background-repeat: round;
 }
 
 *::selection {
@@ -60,16 +62,16 @@ html {
 }
 @keyframes flash {
   0% {
-    color: #32cd32;
-    text-shadow: 0 0 7px #32cd32;
+    color: hsl(120, 100%, 17%);
+    text-shadow: 0 0 7px #679920;
   }
   90% {
     color: #484848;
     text-shadow: none;
   }
   100% {
-    color: #32cd32;
-    text-shadow: 0 0 7px #32cd32;
+    color: #679920;
+    text-shadow: 0 0 7px #679920;
   }
 }
 
@@ -122,11 +124,11 @@ main {
 }
 
 #logo {
-  width: 40%;
+  width: 30%;
 }
 
 #intro {
-  margin-top: 5rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,7 +138,7 @@ main {
   font-size: 3vw;
   font-weight: bold;
   font-family: 'Lemon_milk_medium', sans-serif;
-  color: rgb(43, 99, 184);
+  color:  #476f02;
 }
 
 #intro ul {
@@ -152,7 +154,7 @@ main {
 }
 
 #intro ul i {
-  color: #46d814;
+  color: #679920;
   font-size: 1.2em;
 }
 
@@ -167,16 +169,16 @@ main {
   width: 10em;
   border: none;
   border-radius: 10em;
-  background: #46d814;
+  background: #679920;
   font-size: 17px;
   color: #ffffff;
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   cursor: pointer;
 
-  box-shadow: 0 1px 1px rgba(18, 172, 56, 0.12),
-    0 2px 2px rgba(56, 194, 21, 0.12), 0 4px 4px rgba(32, 161, 28, 0.12),
-    0 8px 8px rgba(45, 161, 10, 0.12), 0 16px 16px rgba(40, 190, 21, 0.12);
+  box-shadow: 0 1px 1px rgba(0, 91, 23, 0.12),
+    0 2px 2px rgba(15, 74, 0, 0.12), 0 4px 4px rgba(3, 95, 0, 0.12),
+    0 8px 8px rgba(16, 71, 0, 0.12), 0 16px 16px rgba(8, 71, 0, 0.12);
 }
 
 .classic-button:hover {

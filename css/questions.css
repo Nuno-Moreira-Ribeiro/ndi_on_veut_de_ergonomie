@@ -16,16 +16,61 @@
 }
 
 body {
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: whitesmoke;
-  font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.liane img{
+  width: 10vw;
+}
+
+.liane{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
+  
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../res/img/bg.png");
+    background-repeat: round;
+    background-size: cover;
+    animation: fadeOutBackground 2s forwards;
+}
+
+@keyframes fadeOutBackground {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+body.background-loaded .background-image {
+    animation: zoomAndFade 2s forwards;
+    z-index: -1000;
+}
+
+@keyframes zoomAndFade {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
 }
 
 *::selection {
@@ -57,16 +102,16 @@ html {
 }
 @keyframes flash {
   0% {
-    color: #32cd32;
-    text-shadow: 0 0 7px #32cd32;
+    color: #679920;
+    text-shadow: 0 0 7px #679920;
   }
   90% {
     color: #484848;
     text-shadow: none;
   }
   100% {
-    color: #32cd32;
-    text-shadow: 0 0 7px #32cd32;
+    color: #679920;
+    text-shadow: 0 0 7px #679920;
   }
 }
 
@@ -119,7 +164,7 @@ main {
 }
 
 #logo {
-  width: 40%;
+  width: 30%;
 }
 
 #content {
@@ -167,12 +212,12 @@ main {
   border-radius: 2rem;
   padding: 1.8rem; /*2%*/
   text-align: center;
-  box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.3);
+  box-shadow: 0 6px 6px 6px hsl(0deg 0% 0% / 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5%;
   transition: opacity 1s, filter 0.5s;
+  margin-top: 1%;
 }
 
 #questions-bloc .question {
@@ -216,16 +261,16 @@ main {
   border: none;
   border-radius: 5px;
   padding: 12px 10px 12px 10px;
-  background: #46d814;
+  background: #679920;
   font-size: 1.1rem;
   color: #ffffff;
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   cursor: pointer;
 
-  box-shadow: 0 1px 1px rgba(18, 172, 56, 0.12),
-    0 2px 2px rgba(56, 194, 21, 0.12), 0 4px 4px rgba(32, 161, 28, 0.12),
-    0 8px 8px rgba(45, 161, 10, 0.12), 0 16px 16px rgba(40, 190, 21, 0.12);
+  box-shadow: 0 1px 1px rgba(0, 75, 19, 0.12),
+    0 2px 2px rgba(12, 58, 0, 0.12), 0 4px 4px rgba(2, 67, 0, 0.12),
+    0 8px 8px rgba(16, 68, 0, 0.12), 0 16px 16px rgba(8, 67, 0, 0.12);
 
   transition: all 0.3s ease-in-out 0.1s;
 }
@@ -336,6 +381,9 @@ main {
 footer {
   position: absolute;
   bottom: 10px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 footer a {
@@ -403,7 +451,9 @@ footer a:hover {
   footer p {
     font-size: 4vw;
   }
-
+  .liane{
+    display: none;
+  }
   /*principal*/
 }
 

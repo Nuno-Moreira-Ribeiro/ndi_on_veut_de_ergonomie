@@ -9,58 +9,60 @@ const questionsBloc = document.getElementById('questions-bloc');
 var shareButton;
 
 const qsList = [
-    "Je parle facilement en public.",
-    "J'aime rencontrer de nouvelles personnes.",
-    "Je préfère les grandes fêtes aux petits rassemblements.",
-    "J'engage souvent des conversations avec des inconnus.",
-    "Je suis à l'aise lors des événements sociaux.",
-    "J'aime participer à des activités de groupe.",
-    "Je me sens bien en compagnie d'amis proches.",
-    "Je préfère passer du temps avec des gens plutôt que seul.",
-    "Je suis sociable et bavard.",
-    "Je me mets rarement en avant dans les conversations.",
-    "Je suis un bon auditeur.",
-    "Je me fais de nouveaux amis facilement.",
-    "Je suis le genre de personne à organiser des sorties entre amis.",
-    "Je ne me sens pas nerveux(se) lors de nouvelles rencontres.",
-    "Je suis généralement à l'aise en société.",
-    "Je suis ouvert(e) à de nouvelles expériences sociales.",
-    "Je suis extraverti(e) par nature.",
-    "J'ai tendance à aller vers les foules.",
-    "Je ne suis pas quelqu'un de timide.",
-    "Je ne me tiens pas souvent à l'écart des conversations de groupe.",
-    "J'adore les grandes fêtes et les événements sociaux.",
-    "J'essaie de faire en sorte que tout le monde se sente à l'aise en ma présence.",
-    "Je suis autant à l'aise avec les amis qu'avec des inconnus.",
-    "J'aime discuter de divers sujets avec différentes personnes.",
-    "Je suis facile à aborder.",
-    "Je préfère les rencontres en personne aux interactions en ligne .",
-    "Je m'ouvre autant une fois que je connais mieux quelqu'un que pas du tout.",
-    "Je trouve enrichissant d'apprendre à connaître de nouvelles personnes."
+    "Je suis conscient(e) de mon impact sur l'environnement.",
+    "Je prends des mesures pour réduire ma consommation d'énergie.",
+    "Je trie régulièrement mes déchets.",
+    "Je privilégie les produits locaux et durables dans mes achats.",
+    "J'adopte des pratiques éco-responsables au quotidien.",
+    "Je suis engagé(e) dans des actions de préservation de l'environnement.",
+    "Je participe à des initiatives de nettoyage de mon quartier ou de ma ville.",
+    "Je suis informé(e) sur les enjeux environnementaux actuels.",
+    "Je cherche activement des moyens de réduire mon empreinte carbone.",
+    "Je soutiens des causes liées à la protection de la nature.",
+    "Je suis sensible aux problématiques de la biodiversité.",
+    "Je m'informe sur les alternatives écologiques dans mes choix de consommation.",
+    "Je fais attention à ma consommation d'eau au quotidien.",
+    "Je préfère les modes de transport écologiques (vélo, transports en commun).",
+    "Je participe à des événements visant à sensibiliser à l'écologie.",
+    "Je suis ouvert(e) à adopter des habitudes de vie plus durables.",
+    "Je cherche des moyens de réduire l'utilisation de plastique dans ma vie.",
+    "Je suis attentif(ve) aux labels et certifications environnementales.",
+    "Je sensibilise mon entourage aux enjeux écologiques.",
+    "Je m'implique dans des projets de préservation de la nature.",
+    "Je suis prêt(e) à changer mes habitudes pour contribuer à la protection de l'environnement.",
+    "Je m'intéresse aux innovations éco-responsables.",
+    "Je participe à des actions de reboisement ou de restauration de l'écosystème.",
+    "Je cherche des moyens de réduire ma production de déchets.",
+    "Je suis attentif(ve) à la provenance des produits que j'achète.",
+    "Je m'efforce de diminuer ma consommation de viande pour des raisons environnementales.",
+    "Je soutiens des initiatives locales en faveur de l'environnement.",
+    "Je considère l'impact écologique dans mes décisions quotidiennes."
 ];
 
 const statusList = [
-    "Explorateur de la solitude",
-    "Ami du calme",
-    "Étoile sociale",
-    "Maître des conversations",
-    "Génie de la sociabilité"
+    "Gardien(ne) de la nature",
+    "Protecteur(trice) de l'environnement",
+    "Ambassadeur(rice) de l'écologie",
+    "Éco-conscient(e) engagé(e)",
+    "Défenseur(trice) de la biodiversité"
 ];
 
 const dcpList = [
-    "Tu es un explorateur de la solitude. Tu apprécies la tranquillité et la réflexion personnelle. La vie sociale n'est pas ta priorité, mais tu as tes propres passions.",
-    "Tu es l'ami du calme. Tu es à l'aise avec des interactions légères, mais tu préfères souvent des moments de quiétude. Tu trouves un équilibre entre solitude et société.",
-    "Tu es une étoile sociale. Les conversations et les rencontres font partie intégrante de ta vie. Tu sais t'amuser sans perdre de vue les règles sociales.",
-    "Tu es un maître des conversations. La sociabilité est ton domaine. Tu es à l'aise dans toutes les situations sociales et tu brilles dans les interactions humaines.",
-    "Tu es un génie de la sociabilité. Tu es le centre de toutes les conversations, et tu as une capacité innée à connecter avec les autres. La sociabilité est ton art de vivre."
+    "Tu es un gardien(ne) de la nature. Tu consacres ton énergie à protéger l'environnement et à promouvoir des pratiques écologiques. La solitude te permet de te ressourcer pour mieux agir.",
+    "Tu es le protecteur(trice) de l'environnement. Ton calme intérieur s'allie à ta détermination à sauvegarder la planète. Tu agis avec conscience pour un monde plus durable.",
+    "Tu es l'ambassadeur(rice) de l'écologie. Les conversations sur l'environnement sont au cœur de tes interactions. Tu cherches à inspirer les autres à adopter des habitudes plus durables.",
+    "Tu es éco-conscient(e) engagé(e). Maître des conversations écologiques, tu es à l'avant-garde des initiatives de préservation. Ta sociabilité sert la cause de la planète.",
+    "Tu es le défenseur(trice) de la biodiversité. Génie de la sociabilité écologique, tu es au centre des efforts pour protéger la diversité biologique. La sociabilité durable est ton art de vivre."
 ];
 
-const citList = ["« La société veut des citoyens, elle ne veut pas des hommes. » - Oscar Wilde",
-    "«La normalité est une route pavée : on y marche aisément mais les fleurs n'y poussent pas. - Vincent Van Gogh»",
-    "«La société veut des moutons, elle trouvera toujours un berger.» - Michel Audiard",
-    "«Dans la vie, il n'y a qu'une chose qui soit vraiment importante : c'est de décider ce que l'on veut faire de sa vie.» - Winston Churchill",
-    "«Les conventions sont des inventions humaines et rien ne nous oblige à les suivre aveuglément.» - Bertrand Russell",
-    "«Dans toute société, il y a des normes qui façonnent les comportements, mais la créativité vient de ceux qui savent briser ces normes et faire les choses différemment.» - Quelqu'un"]
+const citList = [
+    "« La société a besoin de citoyens écologiques, elle ne veut pas seulement des individus. » - Oscar Vert",
+    "« L'écologie n'est pas une route pavée : on y marche différemment, et les fleurs y poussent. - Éco-Vincent »",
+    "« La société a besoin de défenseurs de la nature, elle trouvera toujours des éco-guides. » - Michel Éco-audiard",
+    "« Dans la vie, il n'y a qu'une chose qui soit vraiment importante : c'est de décider comment contribuer à la préservation de la planète. » - Éco-Winston",
+    "« Les conventions écologiques sont des créations humaines et rien ne nous oblige à polluer aveuglément. » - Bertrand Éco-russell",
+    "« Dans toute société écolo, il y a des normes qui façonnent les comportements, mais la créativité vient de ceux qui savent briser ces normes pour un monde plus vert. » - Éco-quelqu'un"
+];
 var statusIndex;
 var qsIndex = 0; question.innerText = qsList[qsIndex];
 var scoreList = []; initScoreList();

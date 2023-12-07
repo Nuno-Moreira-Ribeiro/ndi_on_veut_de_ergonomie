@@ -199,7 +199,7 @@ main {
 .classic-button.angry {
   background: #e63c3c;
   box-shadow: 0 1px 1px rgba(214, 67, 22, 0.12),
-    0 2px 2px rgba(194, 47, 21, 0.12), 0 4px 4px rgba(182, 49, 31, 0.12),
+    0 2px 2px rgba(194, 47, 21, 0.12), 0 4px 4px rgba(100, 79, 77, 0.12),
     0 8px 8px rgba(201, 30, 24, 0.12), 0 16px 16px rgba(190, 32, 21, 0.12);
 }
 
