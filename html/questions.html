@@ -19,19 +19,18 @@
         rel="stylesheet">
 
     <!-- charger le style -->
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/questions.css" rel="stylesheet">
 
     <!-- charger les icônes (font awesome)-->
     <script src="https://kit.fontawesome.com/bf31f3517c.js" crossorigin="anonymous"></script>
 
-    <link rel="shortcut icon" href="res/img/icon.ico"> <!-- charger la miniature -->
+    <link rel="shortcut icon" href="../res/img/icon.ico"> <!-- charger la miniature -->
 
     <title>Socio-O-meter - Suis-je sociable ?</title>
 </head>
 
 <body>
-
     <!-- Loader... -->
     <div class="loader">
         <span class="lettre">C</span>
@@ -44,31 +43,46 @@
         <span class="lettre">E</span>
         <span class="lettre">N</span>
         <span class="lettre">T</span>
-        <script type="module" src="js/chargement.js"></script>
     </div>
+    <script type="module" src="../js/chargement.js"></script>
     <!-- fin Loader -->
 
     <main>
 
-        <img id="logo" src="./res/img/logo.png" alt="logo pnj o meter" draggable="false">
+        <img id="logo" src="../res/img/logo.png" alt="logo pnj o meter" draggable="false">
+
+        <div id="content">
+            <div class="progress">
+                <div class="progress-done"></div>
+            </div>
+            <div id="questions-bloc">
+                <p class="question">Impossible de charger les questions !</p>
+
+                <div class="slider">
+                    <p>Non, pas vraiment</p>
+                    <input type="range" min="0" max="100" value="50">
+                    <p>Oui, assurément</p>
+                </div>
 
 
-        <div id="intro">
-            <h2>¿ Suis-je sociable ?</h2>
-            <ul>
-                <li>
-                    3 minutes chrono  <i class="far fa-clock"></i>
-                </li>
-                <li>Note /10  <i class="fa-solid fa-marker"></i></li>
-                <li>Approuvé par l'expérience  <i class="fa-solid fa-people-group"></i></li>
-            </ul>
-            <a href="html/questions.html"><button class="classic-button">Je me teste</button></a>
+                <div class="buttons-container">
+                    <button id="previous-button" class="classic-button">Précédente</button>
+                    <button id="next-button" class="classic-button">Suivante</button>
+                </div>
+            </div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2023 - <a href="html/informations.html">CA.NMR</a> all rights reserved</p>
+        <p>&copy; 2023 - <a href="informations.html">CA.NMR</a> all rights reserved</p>
     </footer>
+
+    <!-- charger le js -->
+    <script type="module" src="../js/questions.js"></script>
+
+
+
+
 
 </body>
 

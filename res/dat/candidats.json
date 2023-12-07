@@ -1,0 +1,28 @@
+{
+    "candidats": [
+        {
+            "name": "Clément",
+            "description": "Salut moi c'est Clément ! Dans la vie de tous les jours, j'aime programmer et dessiner. J'ai contribué à la création de ce site. N'hésite pas à me contacter si tu veux me faire part de ton retour par rapport à ce test de sociabilité. 😉",
+            "persoInfos": {
+                "birth": "2004 (18ans)",
+                "profession": "Etudiant en informatique",
+                "size": "1m79"
+            },
+            "profilePic": "../res/img/Candidats/clement.png",
+            "messageToken": "1090753562558083102/vzrQ7ZzLjQ_PLOeYIyoOdtlJcvLq3gebu8vrcS-jRbG-FsFUlyeskOiR33i6gHKNJA0g",
+            "sendedMessage": "Merci, je te répondrai dès que je pourrai !"
+        },
+        {
+            "name": "Nuno",
+            "description": "Bonjour je suis Nuno actuellement en IUT informatique à Gradignan je suis à la recherche d'un stage qui peut mener sur une alternance. Cela serait un plaisir de vous apporter plus d'informations concernant ce site que j'ai eu l'occasion de cofonder.",
+            "persoInfos": {
+                "birth": "2004 (18ans)",
+                "profession": "Etudiant en informatique",
+                "size": "1m77"
+            },
+            "profilePic": "../res/img/Candidats/nuno.png",
+            "messageToken": "1164887753742372904/4_ztvuaatWlRLwV7Ej46MTW_wo4KiL0gsrS_e1TygpG7tIFu85w5X8M_AEpfj87sgiVq",
+            "sendedMessage": "Merci, je te répondrai dès que je pourrai !"
+        }
+    ]
+}

@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+/*header*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #9ee63c;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0.95;
+  z-index: 100;
+}
+
+header img {
+  height: 10vh;
+}
+
+header li {
+  background-color: #9ee63c;
+  font-size: 1.3rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header li:hover {
+  background-color: whitesmoke;
+  color: #9ee63c;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+header ul {
+  display: flex;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+#open-menu-btn {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: none;
+}
+/*fin header*/
+
+#info-container {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+  background-color: rgb(178, 255, 162);
+  border-radius: 10px;
+  padding: 5vw;
+  height: fit-content;
+  font-family: Ubuntu;
+}
+
+#navigateur {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#lang {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#navprivate {
+  margin-bottom: 2%;
+}
+
+#localisation {
+  width: 500px;
+  height: 500px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/*reasons*/
+#reasons {
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 1.5rem;
+  width: 25%;
+}
+
+/* taille smartphone */
+@media screen and (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+
+  header li {
+    width: 100%;
+    display: none;
+  }
+
+  .opened header li {
+    display: block;
+  }
+
+  #open-menu-btn {
+    display: block;
+  }
+
+  header ul {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  main {
+    width: 100%;
+  }
+}
+/* taille tablette */
+
+@media screen and (max-width: 700px) {
+  #localisation {
+    display: none;
+  }
+
+  #navprivate {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}

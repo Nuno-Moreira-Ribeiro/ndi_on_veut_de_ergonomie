@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desciption" content="page web permettant de mesurer à quel point on est un sociable">
+
+    <!-- charger la police d'écriture -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Phudu:wght@500&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+
+    <!-- charger le style -->
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/informations.css" rel="stylesheet">
+
+    <!-- charger les icônes (font awesome)-->
+    <script src="https://kit.fontawesome.com/bf31f3517c.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="../res/img/icon.ico"> <!-- charger la miniature -->
+
+    <title>Socio-O-meter - informations</title>
+</head>
+
+<body>
+
+    <!-- balises cachées -->
+
+    <div class="loader">
+        <span class="lettre">C</span>
+        <span class="lettre">H</span>
+        <span class="lettre">A</span>
+        <span class="lettre">R</span>
+        <span class="lettre">G</span>
+        <span class="lettre">E</span>
+        <span class="lettre">M</span>
+        <span class="lettre">E</span>
+        <span class="lettre">N</span>
+        <span class="lettre">T</span>
+    </div>
+    <script type="module" src="../js/chargement.js"></script>
+
+
+
+    <div class="loading">
+        <svg id="loader" viewbox="25 25 50 50">
+            <circle r="20" cy="50" cx="50"></circle>
+        </svg>
+    </div>
+    <div id="coockies-overlay"></div>
+    <div id="coockies-popup">
+        <img src="../res/img/coockies.png" alt="coockies" draggable="false">
+        <div class="left">
+            <h2>Coockies !</h2>
+            <p>Nous respectons votre vie privée. Mais afin de pouvoir vous conférer une expérience optimale, vous devez
+                activer les coockies. Cependant, ils seront supprimés à la fin de votre session de navigation, donc
+                aucun problème !</p>
+            <div class="buttons">
+                <button class="classic-button angry">Refuser et quitter</button>
+                <button class="classic-button hungry">Accepter</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- site -->
+    <header>
+        <img src="../res/img/icon.png" alt="logo header" draggable="false">
+        <i id="open-menu-btn" class="fa-solid fa-bars"></i>
+        <nav>
+            <ul>
+                <li onclick="window.location.href ='questions.html'">Je me teste !</li>
+                <li onclick="window.location.href ='../index.html'">Accueil</li>
+                <li onclick="window.location.href ='#contact'">Nous contacter</li>
+                <li onclick="window.location.href ='../html/données.html'">Données perso</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="title-container">
+            <h1>Socio-o-meter</h1>
+            <h3>Tester sa sociabilité <span class="bold">facilement</span> et <span class="bold">gratuitement</span>!
+            </h3>
+        </section>
+        <div id="infos-container">
+            <section class="whatis">
+                <h2 class="subtitle">Qu'est-ce que le Socio-O-meter ?</h2>
+                <p class="paragraph">Le Socio-O-meter est un test simple composé d'une trentaine de questions conçues
+                    pour
+                    évaluer votre niveau de sociabilité dans diverses situations de la vie quotidienne. Vous répondrez à
+                    ces questions en indiquant votre degré de confort dans chaque situation. À partir de vos réponses,
+                    un calcul discret, gardé confidentiel pour des raisons évidentes, attribuera un statut qui reflètera
+                    votre degré de sociabilité. C'est ainsi que nous avons baptisé notre mesure brevetée, le
+                    "Socio-O-meter".</p>
+            </section>
+
+            <section class="whoare">
+                <h2 class="subtitle">Qui sommes-nous ?</h2>
+                <p class="paragraph">Nous sommes un groupe de passionnés en informatique ayant constaté l'importance
+                    croissante de la sociabilité dans nos vies. Nous avons créé ce site de mesure du niveau de
+                    sociabilité pour sensibiliser et promouvoir des interactions sociales positives. Nous remercions
+                    chaleureusement les personnes qui ont participé à notre projet.</p>
+            </section>
+
+            <section class="issues">
+                <h2 class="subtitle">Enjeux de la mesure</h2>
+                <p class="paragraph">Il est essentiel de comprendre et d'évaluer son niveau de sociabilité. Cela permet
+                    d'adapter son comportement social et de maintenir des relations saines. Le test vous aidera à
+                    prendre conscience de votre sociabilité actuelle et, le cas échéant, à développer vos compétences
+                    sociales. Il n'est jamais trop tard pour améliorer votre capacité à interagir avec les autres.</p>
+            </section>
+
+            <section class="trust">
+                <h2 class="subtitle">Puis-je faire confiance au test ?</h2>
+                <p class="paragraph">Le test a été minutieusement élaboré et validé par des experts en sociabilité. Nous
+                    avons reçu l'approbation de la communauté des spécialistes en sociabilité, dont nous sommes fiers de
+                    faire partie. Vous pouvez avoir une confiance totale en la qualité et la pertinence de ce test.
+                    Chaque question a été soigneusement formulée pour assurer une mesure précise de votre niveau de
+                    sociabilité. Rien n'est laissé au hasard, et nous vous garantissons un test sérieux et
+                    scientifiquement fondé.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <h2>Nous contacter</h2>
+        <h3>Si vous voulez nous faire part de quoi que ce soit, n'hésitez pas !</h3>
+        <div class="dev-card">
+            <div class="left">
+                <img id="candidat-photo" src="../res/img/logo.png" alt="photo du candidat">
+                <ul class="paragraph" id="quick-candidat-overfiew">
+                    <li>Date naissance/age</li>
+                    <li>etudes/revenu mensuel</li>
+                    <li>taille du 3e membre</li>
+                </ul>
+            </div>
+            <div class="right">
+                <h3 id="cdt-name">Name</h3>
+                <p class="paragraph" id="candidat-description">Description</p>
+                <form>
+                    <textarea id="message-input" name="Message"></textarea>
+                    <button class="classic-button" id="send-application" type="button"
+                        onsubmit="return false">Envoyer</button>
+                </form>
+            </div>
+            <i id="next-cdt-btn" class="fa-solid fa-arrow-right fa-beat-fade"></i>
+        </div>
+        <div id="social-medias">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-discord"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-square-snapchat"></i>
+            <i class="fa-brands fa-reddit"></i>
+            <i class="fa-brands fa-pinterest"></i>
+        </div>
+        <p>&copy; 2023 - CA.NMR all rights reserved</p>
+    </footer>
+
+    <div id="notification-popup">
+        <p>Et non l'ami ce sont de faux liens ! Tu crois vraiment qu'on n'a autant pas de vie que ça ?</p>
+    </div>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/64172ef44247f20fefe6c97f/1grt8urei';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <!-- charger le js -->
+    <script type="module" src="../js/informations.js"></script>
+
+
+
+</body>
+
+</html>
